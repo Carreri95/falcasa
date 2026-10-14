@@ -11,3 +11,7 @@ export const SITE_DESCRIPTION =
 export const SITE_EMAIL = "falcasa.controleambiental@gmail.com";
 
 export const SITE_PHONES = ["+55-34-99802-0426", "+55-34-99737-7144"];
+
+export const INSTAGRAM_HANDLE = "falcasa.controleambiental";
+
+export const INSTAGRAM_URL = `https://www.instagram.com/${INSTAGRAM_HANDLE}/`;

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Eyebrow } from "@/components/common/Eyebrow";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/motion/Reveal";
+import { INSTAGRAM_HANDLE, INSTAGRAM_URL } from "@/config/site";
 import { WHATSAPP_URL, WHATSAPP_URL_2 } from "@/config/whatsapp";
 
 const contacts = [
@@ -133,17 +134,43 @@ export function ContactSection() {
         </div>
 
         <div className="mt-16 flex flex-col gap-8 md:mt-20">
-          <nav className="flex flex-wrap gap-x-7 gap-y-3">
-            {footerLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="font-mono text-[0.7rem] uppercase tracking-[0.14em] text-ink-soft transition-colors duration-200 hover:text-ink"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
+          <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+            <nav className="flex flex-wrap gap-x-7 gap-y-3">
+              {footerLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="font-mono text-[0.7rem] uppercase tracking-[0.14em] text-ink-soft transition-colors duration-200 hover:text-ink"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Instagram da Falcasa: @${INSTAGRAM_HANDLE}`}
+              className="group flex items-center gap-3 self-start md:self-auto"
+            >
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-band-line text-ink transition-colors duration-200 group-hover:border-accent group-hover:bg-accent group-hover:text-white">
+                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                </svg>
+              </span>
+              <span className="leading-tight">
+                <span className="block font-mono text-eyebrow uppercase text-gold">
+                  Acesse nossas redes
+                </span>
+                <span className="block font-mono text-[0.92rem] text-ink transition-colors duration-200 group-hover:text-accent">
+                  @{INSTAGRAM_HANDLE}
+                </span>
+              </span>
+            </a>
+          </div>
 
           <div className="flex flex-col gap-3 border-t border-band-line pt-6">
             <p className="text-[0.68rem] uppercase tracking-[0.14em] text-ink-soft">

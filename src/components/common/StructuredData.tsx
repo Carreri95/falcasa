@@ -1,4 +1,5 @@
 import {
+  INSTAGRAM_URL,
   SITE_DESCRIPTION,
   SITE_EMAIL,
   SITE_NAME,
@@ -20,6 +21,7 @@ const structuredData = {
       image: `${SITE_URL}/opengraph-image`,
       email: SITE_EMAIL,
       telephone: SITE_PHONES[0],
+      sameAs: [INSTAGRAM_URL],
       address: {
         "@type": "PostalAddress",
         addressLocality: "Uberlândia",
