@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 
 export const alt =
-  "Falcasa Controle Ambiental: não espantamos pombos, soltamos o predador deles.";
+  "Falcasa Controle Ambiental. Falcoaria: uma solução natural, eficiente e sustentável.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -67,8 +67,10 @@ export default async function OpengraphImage() {
               textTransform: "uppercase",
             }}
           >
-            <span>Não espantamos pombos.</span>
-            <span style={{ color: "#ff5f26" }}>Soltamos o predador deles.</span>
+            <span>Falcoaria:</span>
+            <span style={{ color: "#ff5f26" }}>
+              uma solução natural, eficiente e sustentável
+            </span>
           </div>
           <div style={{ marginTop: 36, fontSize: 28, color: "#c4bba8" }}>
             Controle de aves com falcoaria · Sem veneno · IBAMA

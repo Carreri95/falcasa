@@ -136,8 +136,10 @@ export function HeroSection() {
             animate="visible"
             variants={lineVariants}
           >
-            <AnimatedLine>Não espantamos pombos.</AnimatedLine>
-            <AnimatedLine className="text-accent">Soltamos o predador deles.</AnimatedLine>
+            <AnimatedLine>Falcoaria:</AnimatedLine>
+            <AnimatedLine className="text-accent">
+              uma solução natural, eficiente e sustentável
+            </AnimatedLine>
           </motion.h1>
 
           <motion.p
