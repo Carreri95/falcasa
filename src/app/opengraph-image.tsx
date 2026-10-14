@@ -53,7 +53,7 @@ export default async function OpengraphImage() {
               textTransform: "uppercase",
             }}
           >
-            Falcoaria aplicada · Uberlândia, MG
+            Falcoaria: uma solução natural, eficiente e sustentável · Uberlândia, MG
           </div>
           <div
             style={{
