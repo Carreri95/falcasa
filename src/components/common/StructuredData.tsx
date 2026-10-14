@@ -1,5 +1,7 @@
 import {
+  CNPJ,
   INSTAGRAM_URL,
+  LEGAL_NAME,
   SITE_DESCRIPTION,
   SITE_EMAIL,
   SITE_NAME,
@@ -15,6 +17,8 @@ const structuredData = {
       "@id": `${SITE_URL}/#empresa`,
       name: SITE_NAME,
       alternateName: "Falcasa",
+      legalName: LEGAL_NAME,
+      taxID: CNPJ,
       description: SITE_DESCRIPTION,
       url: SITE_URL,
       logo: `${SITE_URL}/icons/icon-512.png`,

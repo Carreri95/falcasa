@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Eyebrow } from "@/components/common/Eyebrow";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/motion/Reveal";
-import { INSTAGRAM_HANDLE, INSTAGRAM_URL } from "@/config/site";
+import { CNPJ, CTF_IBAMA, INSTAGRAM_HANDLE, INSTAGRAM_URL, LEGAL_NAME } from "@/config/site";
 import { WHATSAPP_URL, WHATSAPP_URL_2, WHATSAPP_URL_3 } from "@/config/whatsapp";
 
 const contacts = [
@@ -92,7 +92,7 @@ export function ContactSection() {
             </h2>
             <p className="measure mt-4 text-ink-soft">
               Envie a planta da operação. Respondemos com o diagnóstico do que
-              está pousando — e do que precisa sair.
+              está pousando e do que precisa sair.
             </p>
             <WhatsAppButton className="mt-7">Chamar no WhatsApp</WhatsAppButton>
           </Reveal>
@@ -178,7 +178,10 @@ export function ContactSection() {
               © {new Date().getFullYear()} Falcasa Controle Ambiental · Uberlândia, MG
             </p>
             <p className="text-[0.6rem] uppercase leading-relaxed tracking-[0.1em] text-ink-soft">
-              Fundada em 2020 · IN IBAMA 141/2006 · Cadastro Técnico Federal 7038404 · 7 aves de rapina em operação
+              Fundada em 2020 · IN IBAMA 141/2006 · Cadastro Técnico Federal {CTF_IBAMA} · 7 aves de rapina em operação
+            </p>
+            <p className="text-[0.6rem] uppercase leading-relaxed tracking-[0.1em] text-ink-soft">
+              {LEGAL_NAME} · CNPJ {CNPJ}
             </p>
           </div>
         </div>

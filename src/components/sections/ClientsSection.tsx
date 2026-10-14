@@ -8,12 +8,11 @@ const clients = [
   "Nestlé Professional",
   "Bunge",
   "Atacadão",
+  "Assaí",
   "Sam's Club",
   "Mart Minas",
   "Polenghi",
-  "Smurfit Kappa",
   "PAMC",
-  "Planalto Rações",
 ];
 
 export function ClientsSection() {

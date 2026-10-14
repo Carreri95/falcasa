@@ -13,6 +13,13 @@ export const SITE_DESCRIPTION =
 // Cole aqui só o valor do content="..." que o Search Console mostrar.
 export const GOOGLE_SITE_VERIFICATION = "";
 
+// Dados do cadastro na Receita Federal.
+export const LEGAL_NAME = "Rodrigo Lima da Silva Serviços em Animais Ltda";
+export const CNPJ = "49.605.575/0001-27";
+
+// Cadastro Técnico Federal do IBAMA.
+export const CTF_IBAMA = "8057209";
+
 export const SITE_EMAIL = "falcasa.controleambiental@gmail.com";
 
 export const SITE_PHONES = [
