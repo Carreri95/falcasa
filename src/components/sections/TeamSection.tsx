@@ -26,13 +26,13 @@ const team: {
   popular: string;
   image: SpeciesImageKey;
 }[] = [
-  { id: "01", name: "Clark", species: "Parabuteo unicinctus", popular: "Gavião-asa-de-telha", image: "gaviao-asa-de-telha" },
-  { id: "02", name: "Apollo", species: "Parabuteo unicinctus", popular: "Gavião-asa-de-telha", image: "gaviao-asa-de-telha" },
-  { id: "03", name: "Ucrânia", species: "Parabuteo unicinctus", popular: "Gavião-asa-de-telha", image: "gaviao-asa-de-telha" },
-  { id: "04", name: "Zeus", species: "Falco peregrinus", popular: "Falcão-peregrino", image: "falcao-peregrino" },
+  { id: "01", name: "Caraxes", species: "Parabuteo unicinctus", popular: "Gavião-asa-de-telha", image: "gaviao-asa-de-telha" },
+  { id: "02", name: "Vhagar", species: "Parabuteo unicinctus", popular: "Gavião-asa-de-telha", image: "gaviao-asa-de-telha" },
+  { id: "03", name: "Maverick", species: "Parabuteo unicinctus", popular: "Gavião-asa-de-telha", image: "gaviao-asa-de-telha" },
+  { id: "04", name: "Sirax", species: "Falco peregrinus", popular: "Falcão-peregrino", image: "falcao-peregrino" },
   { id: "05", name: "Hunter", species: "Falco femoralis", popular: "Falcão-de-coleira", image: "falcao-de-coleira" },
-  { id: "06", name: "Zelle", species: "Geranoaetus melanoleucus", popular: "Águia-chilena", image: "aguia-chilena" },
-  { id: "07", name: "Maya", species: "Tyto furcata", popular: "Coruja-suindara", image: "coruja-suindara" },
+  { id: "06", name: "Asa Prata", species: "Geranoaetus melanoleucus", popular: "Águia-chilena", image: "aguia-chilena" },
+  { id: "07", name: "Killua", species: "Tyto furcata", popular: "Coruja-suindara", image: "coruja-suindara" },
 ];
 
 export function TeamSection() {
@@ -44,7 +44,7 @@ export function TeamSection() {
         </Reveal>
         <Reveal delay={0.05}>
           <h2 className="font-display text-section uppercase">
-            Sete aves. Registro, não mascote.
+            Aves registradas e treinadas para falcoaria.
           </h2>
         </Reveal>
         <Reveal delay={0.1}>
