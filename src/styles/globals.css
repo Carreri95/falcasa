@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bone: #efe9de;
+  --bone-2: #e4daca;
+  --surface: #f8f4ed;
+  --ink: #1b2e1f;
+  --ink-soft: #53644f;
+  --line: #cdbfa8;
+  --band: #1b2e1f;
+  --band-2: #1b2e1f;
+  --band-line: #3b5940;
+  --accent: #d33a00;
+  --gold: #9a7b1e;
+}
+
+[data-theme="dark"] {
+  --bone: #141f16;
+  --bone-2: #1b2e1f;
+  --surface: #1b2e1f;
+  --ink: #ede6d8;
+  --ink-soft: #c4bba8;
+  --line: #3b5940;
+  --band: #141f16;
+  --band-2: #141f16;
+  --band-line: #3b5940;
+  --accent: #ff5f26;
+  --gold: #e3c74a;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  background: var(--bone);
+  color: var(--ink);
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bone-2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--band);
+}
+
+.measure {
+  max-width: 56ch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
