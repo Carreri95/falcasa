@@ -11,7 +11,7 @@ export const SITE_DESCRIPTION =
 
 // Código da verificação do Google Search Console (método "Tag HTML").
 // Cole aqui só o valor do content="..." que o Search Console mostrar.
-export const GOOGLE_SITE_VERIFICATION = "";
+export const GOOGLE_SITE_VERIFICATION = "MDlKCOO0NnVizBY-OOzfSaoUa6vvUXt1ZWAI34KQWcA";
 
 // Dados do cadastro na Receita Federal.
 export const LEGAL_NAME = "Rodrigo Lima da Silva Serviços em Animais Ltda";
