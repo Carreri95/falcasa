@@ -1,3 +1,4 @@
+import { StructuredData } from "@/components/common/StructuredData";
 import { ClientsSection } from "@/components/sections/ClientsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { HeroSection } from "@/components/sections/HeroSection";
@@ -9,6 +10,7 @@ import { VideoVerticalSection } from "@/components/sections/VideoVerticalSection
 export default function Home() {
   return (
     <main>
+      <StructuredData />
       <HeroSection />
       <VideoVerticalSection />
       <ClientsSection />
