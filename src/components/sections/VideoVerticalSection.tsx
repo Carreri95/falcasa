@@ -36,9 +36,9 @@ const PHOTO = {
 };
 
 const facts = [
-  { k: "01", v: "Sem veneno" },
-  { k: "02", v: "Sem disparo" },
-  { k: "03", v: "Manejo IBAMA" },
+  { k: "01", v: "Método eficaz" },
+  { k: "02", v: "Natural" },
+  { k: "03", v: "Normativa 141/2006" },
 ];
 
 export function VideoVerticalSection() {
@@ -177,7 +177,8 @@ export function VideoVerticalSection() {
             <p className="measure mt-5 text-ink-soft">
               Rodrigo Lima, falcoeiro e veterinário, aplica a técnica de
               falcoaria em áreas industriais e em áreas onde a fauna
-              sinantrópica apresenta riscos.
+              sinantrópica apresenta riscos. Também usa seu conhecimento em
+              ações de educação ambiental e ministra cursos.
             </p>
           </Reveal>
 
