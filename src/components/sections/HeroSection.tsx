@@ -28,7 +28,7 @@ function AnimatedLine({ children, className = "" }: { children: string; classNam
   );
 }
 
-function HeroVideo({ src }: { src: string }) {
+function HeroVideo({ src, className = "h-full w-full object-cover" }: { src: string; className?: string }) {
   const ref = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -83,7 +83,7 @@ function HeroVideo({ src }: { src: string }) {
     <video
       key={src}
       ref={ref}
-      className="h-full w-full object-cover"
+      className={className}
       autoPlay
       muted
       loop
@@ -107,9 +107,16 @@ export function HeroSection() {
       data-theme="dark"
       className="relative min-h-[100svh] overflow-hidden bg-band-2 text-ink md:min-h-[88vh]"
     >
-      <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
         {desktop === false ? <HeroVideo src="/videos/hero-eagle.mp4" /> : null}
-        {desktop === true ? <HeroVideo src="/videos/hero-eagle-desktop.mp4" /> : null}
+        {/* O vídeo do desktop tem créditos gravados a partir de 83% da altura.
+            Com 125% de altura e ancorado no topo, só os 80% de cima aparecem. */}
+        {desktop === true ? (
+          <HeroVideo
+            src="/videos/hero-eagle-desktop.mp4"
+            className="absolute inset-x-0 top-0 h-[125%] w-full object-cover object-top"
+          />
+        ) : null}
         <div className="absolute inset-0 bg-gradient-to-t from-band-2 via-band-2/75 to-band-2/35 md:bg-gradient-to-r md:from-band-2 md:via-band-2/70 md:to-transparent" />
       </div>
 
