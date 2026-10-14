@@ -127,7 +127,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <Eyebrow>Falcoaria: uma solução natural, eficiente e sustentável · Uberlândia, MG</Eyebrow>
+            <Eyebrow>Falcoaria aplicada · Uberlândia, MG</Eyebrow>
           </motion.div>
 
           <motion.h1
