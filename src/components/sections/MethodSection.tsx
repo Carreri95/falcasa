@@ -63,7 +63,7 @@ export function MethodSection() {
         </Reveal>
         <Reveal delay={0.05}>
           <h2 className="font-display text-section uppercase">
-            Falcoaria no chão de fábrica.
+            Técnicas de falcoaria e controle ambiental
           </h2>
         </Reveal>
 
