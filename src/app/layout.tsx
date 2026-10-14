@@ -3,7 +3,13 @@ import { Oswald, Barlow, IBM_Plex_Mono } from "next/font/google";
 import { Navigation } from "@/components/common/Navigation";
 import { WhatsAppFloat } from "@/components/common/WhatsAppFloat";
 import { SmoothScroll } from "@/components/motion/SmoothScroll";
-import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from "@/config/site";
+import {
+  GOOGLE_SITE_VERIFICATION,
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_TITLE,
+  SITE_URL,
+} from "@/config/site";
 import "@/styles/globals.css";
 
 const display = Oswald({
@@ -72,6 +78,9 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+  ...(GOOGLE_SITE_VERIFICATION
+    ? { verification: { google: GOOGLE_SITE_VERIFICATION } }
+    : {}),
   formatDetection: {
     telephone: false,
   },

@@ -22,6 +22,12 @@ const structuredData = {
       email: SITE_EMAIL,
       telephone: SITE_PHONES[0],
       sameAs: [INSTAGRAM_URL],
+      foundingDate: "2020",
+      employee: {
+        "@type": "Person",
+        name: "Rodrigo Lima",
+        jobTitle: "Falcoeiro e médico veterinário",
+      },
       address: {
         "@type": "PostalAddress",
         addressLocality: "Uberlândia",
@@ -44,6 +50,8 @@ const structuredData = {
         "Falcoaria",
         "Controle de aves sinantrópicas nocivas",
         "Manejo de fauna",
+        "Educação ambiental",
+        "Cursos de falcoaria",
       ],
       makesOffer: {
         "@type": "Offer",

@@ -70,7 +70,7 @@ export function TeamSection() {
 
               <Image
                 src={speciesImages[bird.image]}
-                alt={bird.popular}
+                alt={`${bird.popular} (${bird.species}), ${bird.name}, ave de rapina do plantel da Falcasa`}
                 width={112}
                 height={112}
                 className="pointer-events-none absolute bottom-2 right-2 h-16 w-16 object-contain opacity-80 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100 md:h-20 md:w-20"
