@@ -5,14 +5,15 @@ import { Eyebrow } from "@/components/common/Eyebrow";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/motion/Reveal";
 import { INSTAGRAM_HANDLE, INSTAGRAM_URL } from "@/config/site";
-import { WHATSAPP_URL, WHATSAPP_URL_2 } from "@/config/whatsapp";
+import { WHATSAPP_URL, WHATSAPP_URL_2, WHATSAPP_URL_3 } from "@/config/whatsapp";
 
 const contacts = [
   {
     label: "WhatsApp",
     values: [
-      { value: "(34) 9 9802-0426", href: WHATSAPP_URL },
-      { value: "(34) 9 9737-7144", href: WHATSAPP_URL_2 },
+      { value: "(34) 9 8439-5096", href: WHATSAPP_URL },
+      { value: "(34) 9 9802-0426", href: WHATSAPP_URL_2 },
+      { value: "(34) 9 9737-7144", href: WHATSAPP_URL_3 },
     ],
   },
   {
